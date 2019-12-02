@@ -1,1 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<!-- pres - is the full dict for a president, sent here by the route -->
+
+	<h1>{{ pres['President'] }}</h1>
+
+	<!-- NOTE the pattern for pointing to a file inside the static folder -->
+	<img class="right" src="{{ url_for('static', filename='images/'+pres['Image']) }}" alt="President portrait">
+
+
+	<!-- REPLACE the brackets below with the correct placeholder to fill in the
+		 data required. Refer to presidents.csv for column headings -->
+
+	<p20/2017,Incumbent,Republican,New York,Businessman,Penn,70,6/14/1946,"New York, New York",Living,NA,pr45.jpg</p>
+
+
+	<p><a href="{{ pres['Wikipedia-entry'] }}">View Wikipedia entry for {{ pres['President'] }}.</a></p>
+
+	<!-- NOTE the way to link to a route: Use the function name -->
+	<p><li><a href="/president /1">George Washington</a></li></p>
+	<p><li><a href="/president /1">John Adams</a></li></p>
+	<p><li><a href="/president /1">Thomas Jefferson</a></li></p>
+	<p><li><a href="/president /1">James Madison</a></li></p>
+	<p><li><a href="/president /1">James Monroe</a></li></p>
+	<p><li><a href="/president /1">John Quincy Adams</a></li></p>
+	<p><li><a href="/president /1">Andrew Jackson</a></li></p>
+	<p><li><a href="/president /1">Martin Van Buren</a></li></p>
+	<p><li><a href="/president /1">William Henry Harrison</a></li></p>
+	<p><li><a href="/president /1">John Tyle</a></li></p>
+	<p><li><a href="/president /1">James K. Polk</a></li></p>
+	<p><li><a href="/president /1">Zachary Taylor</a></li></p>
+	<p><li><a href="/president /1">Millard Fillmore</a></li></p>
+	<p><li><a href="/president /1">Franklin Pierce</a></li></p>
+	<p><li><a href="/president /1">James Buchanan</a></li></p>
+	<p><li><a href="/president /1">,Abraham Lincoln</a></li></p>
+	<p><li><a href="/president /1">Andrew Johnson</a></li></p>
+	<p><li><a href="/president /1">Ulysses S. Grant</a></li></p>
+	<p><li><a href="/president /1">Rutherford B. Hayes</a></li></p>
+	<p><li><a href="/president /1">James A. Garfield</a></li></p>
+	<p><li><a href="/president /1">Chester A. Arthur</a></li></p>
+	<p><li><a href="/president /1">Grover Cleveland</a></li></p>
+	<p><li><a href="/president /1">Benjamin Harrison</a></li></p>
+	<p><li><a href="/president /1">Grover Cleveland</a></li></p>
+	<p><li><a href="/president /1">William McKinley</a></li></p>
+	<p><li><a href="/president /1">Theodore Roosevelt</a></li></p>
+	<p><li><a href="/president /1">William Howard Taft</a></li></p>
+	<p><li><a href="/president /1">Woodrow Wilson</a></li></p>
+	<p><li><a href="/president /1">Warren G. Harding</a></li></p>
+	<p><li><a href="/president /1">Calvin Coolidge</a></li></p>
+	<p><li><a href="/president /1">Herbert Hoover</a></li></p>
+	<p><li><a href="/president /1">Franklin D. Roosevelt</a></li></p>
+	<p><li><a href="/president /1">Harry S. Truman</a></li></p>
+	<p><li><a href="/president /1">Dwight D. Eisenhower</a></li></p>
+	<p><li><a href="/president /1">John F. Kennedy</a></li></p>
+	<p><li><a href="/president /1">Lyndon B. Johnson</a></li></p>
+	<p><li><a href="/president /1">Richard Nixon</a></li></p>
+	<p><li><a href="/president /1">Gerald Ford</a></li></p>
+	<p><li><a href="/president /1">Jimmy Carter</a></li></p>
+	<p><li><a href="/president /1">Ronald Reagan</a></li></p>
+	<p><li><a href="/president /1">George H. W. Bush</a></li></p>
+	<p><li><a href="/president /1">,Bill Clinton</a></li></p>
+	<p><li><a href="/president /1">George W. Bush</a></li></p>
+	<p><li><a href="/president /1">Barack Obama</a></li></p>
+	<p><li><a href="/president /1">Donald Trump</a></li></p>
+	
+	
+{% endblock %}	
 
